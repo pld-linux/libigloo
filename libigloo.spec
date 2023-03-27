@@ -5,12 +5,14 @@
 Summary:	Common C framework by the Icecast project
 Summary(pl.UTF-8):	Wspólny szkielet C z projektu Icecast
 Name:		libigloo
-Version:	0.9.1
+Version:	0.9.2
 Release:	1
 License:	LGPL v2+
 Group:		Libraries
-Source0:	http://downloads.xiph.org/releases/igloo/%{name}-%{version}.tar.gz
-# Source0-md5:	994b93ca6b01ca0e9fd9bb90a21c20ce
+Source0:	https://downloads.xiph.org/releases/igloo/%{name}-%{version}.tar.gz
+# Source0-md5:	6fdca3abc7f87c8627354cee149bf4d5
+BuildRequires:	pkgconfig
+BuildRequires:	rhash-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
